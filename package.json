@@ -6,7 +6,8 @@
   "module": "dist/redux-immer-undo.es5.js",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "release": "standard-version"
+    "pre-release": "standard-version",
+    "release": "git push --follow-tags origin master && npm publish"
   },
   "author": "duor",
   "license": "ISC",
