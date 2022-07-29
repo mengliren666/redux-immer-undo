@@ -16,4 +16,16 @@ npm  install redux-immer-undo
 ```js
 import { undoEnhancer } from "redux-immer-undo"
 
+// -------------------before-------------------
+export default reducer
+
+// -------------------after-------------------
+export default undoEnhancer(reducer, {
+    limit: 30, // 历史流水栈的限制长度
+    undoType: "@@Count/UNDO", // 撤销操作类型
+    redoType: "@@Count/REDO", // 重做操作类型
+    clearHistoryType: "@@Count/CLEAR_HISTORY", // 清空历史记录类型
+    include: [increment(), decrement(), incrementByAsync.fulfilled()], // 需要参与历史记录的action类型
+    openMergeOption: false, // 是否开启合并选项
+})
 ```
