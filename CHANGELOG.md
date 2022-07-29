@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2022-07-29)
+
+
+### Features
+
+* first commit ([10de87b](https://github.com/DuoRouSai/redux-immer-undo/commit/10de87bea3f3bea7f60979bbd5bee0474049df2e))
+
 ## 1.1.0 (2022-07-29)
 
 

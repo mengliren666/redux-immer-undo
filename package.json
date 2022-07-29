@@ -1,6 +1,6 @@
 {
   "name": "redux-immer-undo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "♻️ higher order reducer to add undo/redo functionality to redux state containers",
   "main": "dist/redux-immer-undo.umd.js",
   "module": "dist/redux-immer-undo.es5.js",
